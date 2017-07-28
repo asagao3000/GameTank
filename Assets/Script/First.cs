@@ -8,7 +8,6 @@ public class First : NetworkBehaviour {
 
 	public Camera mainCamera;
 	public AudioListener listener;
-	public GameObject muzzle;
 
 	// Use this for initialization
 	void Start () {

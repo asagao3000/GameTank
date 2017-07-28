@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
+  m_TransformSyncMode: 3
   m_SendInterval: 0.1
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
@@ -516,7 +516,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 20786297833093132}
   listener: {fileID: 81954905095558154}
-  muzzle: {fileID: 1739322334059234}
 --- !u!124 &124662538065691778
 Behaviour:
   m_ObjectHideFlags: 1
