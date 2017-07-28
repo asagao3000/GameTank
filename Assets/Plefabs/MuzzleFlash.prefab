@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4707580983581384}
   - component: {fileID: 114929550851421572}
   - component: {fileID: 114662672320573852}
+  - component: {fileID: 114090327665236374}
+  - component: {fileID: 114941905305673128}
   m_Layer: 0
   m_Name: MuzzleFlash
   m_TagString: Untagged
@@ -41,6 +43,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90.00001, z: 0}
+--- !u!114 &114090327665236374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583842601006592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 189
+    i1: 94
+    i2: 100
+    i3: 31
+    i4: 70
+    i5: 35
+    i6: 132
+    i7: 26
+    i8: 8
+    i9: 241
+    i10: 146
+    i11: 16
+    i12: 101
+    i13: 101
+    i14: 19
+    i15: 29
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114662672320573852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 5
   color: {r: 1, g: 0.423, b: 0, a: 0.5}
-  explodeOnStart: 0
+  explodeOnStart: 1
   duration: 0.7
   detail: 1
   upwardsBias: 2.5
@@ -114,3 +148,23 @@ MonoBehaviour:
   autoCreateLight: 1
   autoCreateForce: 0
   autoCreateHeatwave: 0
+--- !u!114 &114941905305673128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583842601006592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Shoot : MonoBehaviour {
+public class Shoot : NetworkBehaviour {
 
 	public GameObject bullet;
 	public Transform muzzle;
@@ -19,24 +20,32 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Space) && time > reloadTime) {
+		if (isLocalPlayer == true) {
 
-			GameObject bullets = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation)as GameObject;
+			if (Input.GetKeyDown (KeyCode.Space) && time > reloadTime) {
 
-			bullets.GetComponent<Rigidbody> ().AddForce (muzzle.transform.up * speed);
-			bullets.transform.position = muzzle.position;
+				CmdCreateBullet ();
 
-			GetComponent<AudioSource> ().PlayOneShot (shot);
 
-			time = 0f;
-		} else if (time < reloadTime) {
 
-			time += Time.deltaTime;
+				GetComponent<AudioSource> ().PlayOneShot (shot);
 
+				time = 0f;
+			} else if (time < reloadTime) {
+
+				time += Time.deltaTime;
+
+			}
 		}
+	}
 
+	[Command]
+	void CmdCreateBullet(){
 
-
+		GameObject bullets = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation)as GameObject;
+		NetworkServer.Spawn (bullets);
+		bullets.GetComponent<Rigidbody> ().AddForce (muzzle.transform.up * speed);
+		bullets.transform.position = muzzle.position;
 
 	}
 }

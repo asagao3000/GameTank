@@ -19,12 +19,15 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4539490288891358}
-  - component: {fileID: 95191731739466498}
   - component: {fileID: 54261799315653274}
   - component: {fileID: 65179413308225968}
   - component: {fileID: 114167935939749444}
   - component: {fileID: 114603031098539108}
   - component: {fileID: 82315138935133792}
+  - component: {fileID: 114880391059739582}
+  - component: {fileID: 114358451850014462}
+  - component: {fileID: 114918914224306054}
+  - component: {fileID: 114877288690594428}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -59,7 +62,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4560043777217948}
-  - component: {fileID: 114550567936869598}
   m_Layer: 0
   m_Name: Muzzle
   m_TagString: Untagged
@@ -176,7 +178,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1592979159160896}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -293,7 +295,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!65 &65179413308225968
 BoxCollider:
@@ -303,7 +305,7 @@ BoxCollider:
   m_GameObject: {fileID: 1217702910912586}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.256155, y: 2.326505, z: 2.7561264}
   m_Center: {x: -0.38732052, y: 1.1469733, z: 0.050842285}
@@ -313,7 +315,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1592979159160896}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &82315138935133792
 AudioSource:
   m_ObjectHideFlags: 1
@@ -401,30 +403,13 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1592979159160896}
   m_Enabled: 1
---- !u!95 &95191731739466498
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1217702910912586}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2f36ff213ce19454f80e5be2bd75e2fd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114167935939749444
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1217702910912586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae2c52d1d5da14f1ba9566247c4fa187, type: 3}
   m_Name: 
@@ -435,28 +420,33 @@ MonoBehaviour:
   idling: {fileID: 8300000, guid: ecc6e5df7031840818afd3fc105fe649, type: 3}
   move: {fileID: 8300000, guid: a74a646b4ae6d4d37b0fce087359b148, type: 3}
   life: 100
---- !u!114 &114550567936869598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1739322334059234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23dfe82ece728447097bb203ae99e4f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  muzzle: {fileID: 1739322334059234}
-  muzzleFlash: {fileID: 1583842601006592, guid: bd5e641f4623841a08f192106565131d,
-    type: 2}
-  reloadTime: 2
---- !u!114 &114603031098539108
+--- !u!114 &114358451850014462
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1217702910912586}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &114603031098539108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217702910912586}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28d9609f2664840f6a6dc43efc5d5502, type: 3}
   m_Name: 
@@ -466,6 +456,67 @@ MonoBehaviour:
   speed: 8000
   reloadTime: 2
   shot: {fileID: 8300000, guid: bbee74c350f2d4468ac705f48e863d47, type: 3}
+--- !u!114 &114877288690594428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217702910912586}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dfe82ece728447097bb203ae99e4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 1739322334059234}
+  muzzleFlash: {fileID: 1583842601006592, guid: bd5e641f4623841a08f192106565131d,
+    type: 2}
+  reloadTime: 2
+--- !u!114 &114880391059739582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217702910912586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 55
+    i1: 73
+    i2: 213
+    i3: 110
+    i4: 177
+    i5: 128
+    i6: 52
+    i7: 233
+    i8: 170
+    i9: 102
+    i10: 39
+    i11: 143
+    i12: 239
+    i13: 254
+    i14: 75
+    i15: 114
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &114918914224306054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217702910912586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0eea502da17c341a5d36bad9bcab51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 20786297833093132}
+  listener: {fileID: 81954905095558154}
+  muzzle: {fileID: 1739322334059234}
 --- !u!124 &124662538065691778
 Behaviour:
   m_ObjectHideFlags: 1

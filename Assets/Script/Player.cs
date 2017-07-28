@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Player : MonoBehaviour
+public class Player : NetworkBehaviour
 {
 	public float sp;
 	public Rigidbody rb;
@@ -23,12 +24,14 @@ public class Player : MonoBehaviour
 		audioSource.clip = idling;
 		audioSource.Play ();
 
+
+
 	}
 
 	void OnCollisionEnter(Collision collision){
 		string yourTag = collision.gameObject.tag;
 		//この辺デバッグ用
-		if (yourTag == "Bullet") {
+		if (yourTag == "Bullet" && isLocalPlayer == true) {
 			life -= 10;
 			Debug.Log (life);
 		}
@@ -40,6 +43,15 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (isLocalPlayer == true) {
+
+			Move ();
+		}
+
+	}
+
+	void Move(){
+
 		//この辺デバッグ用
 		if (life <= 0) {
 			Debug.Log ("GAME OVER");
@@ -60,7 +72,7 @@ public class Player : MonoBehaviour
 		}
 
 		if (Input.GetKey ("w") || Input.GetKey ("s") || Input.GetKey ("d") || Input.GetKey ("a")) {
-				if (nowplaying!=1) {
+			if (nowplaying!=1) {
 				audioSource.clip = move;
 				audioSource.Play ();
 				nowplaying = 1;
@@ -74,4 +86,6 @@ public class Player : MonoBehaviour
 		}
 
 	}
+
+
 }

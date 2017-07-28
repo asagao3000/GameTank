@@ -1,0 +1,621 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     2018 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\GitHub\GameTank\TankGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\GitHub\GameTank\TankGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.177 seconds
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\GitHub\GameTank\TankGame_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.519422 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2b08 -> priority: 1 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:InvokeCmdCmdCreateMuzzleFlash(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleCommand(Int32, NetworkReader)
+UnityEngine.Networking.NetworkServer:OnCommandMessage(NetworkMessage)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32)
+UnityEngine.Networking.NetworkServer:OnData(NetworkConnection, Int32, Int32)
+UnityEngine.Networking.ServerSimpleWrapper:OnData(NetworkConnection, Int32, Int32)
+UnityEngine.Networking.NetworkServerSimple:HandleData(Int32, Int32, Int32, Byte)
+UnityEngine.Networking.NetworkServerSimple:Update()
+UnityEngine.Networking.NetworkServer:InternalUpdate()
+UnityEngine.Networking.NetworkServer:Update()
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.InvokeCmdCmdCreateMuzzleFlash (UnityEngine.Networking.NetworkBehaviour obj, UnityEngine.Networking.NetworkReader reader) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.HandleCommand (Int32 cmdHash, UnityEngine.Networking.NetworkReader reader) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.OnCommandMessage (UnityEngine.Networking.NetworkMessage netMsg) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleReader (UnityEngine.Networking.NetworkReader reader, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleBytes (System.Byte[] buffer, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.TransportRecieve (System.Byte[] bytes, Int32 numBytes, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer+ServerSimpleWrapper.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.HandleData (Int32 connectionId, Int32 channelId, Int32 receivedSize, Byte error) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.InternalUpdate () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:InvokeCmdCmdCreateMuzzleFlash(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleCommand(Int32, NetworkReader)
+UnityEngine.Networking.NetworkServer:OnCommandMessage(NetworkMessage)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32)
+UnityEngine.Networking.NetworkServer:OnData(NetworkConnection, Int32, Int32)
+UnityEngine.Networking.ServerSimpleWrapper:OnData(NetworkConnection, Int32, Int32)
+UnityEngine.Networking.NetworkServerSimple:HandleData(Int32, Int32, Int32, Byte)
+UnityEngine.Networking.NetworkServerSimple:Update()
+UnityEngine.Networking.NetworkServer:InternalUpdate()
+UnityEngine.Networking.NetworkServer:Update()
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.InvokeCmdCmdCreateMuzzleFlash (UnityEngine.Networking.NetworkBehaviour obj, UnityEngine.Networking.NetworkReader reader) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.HandleCommand (Int32 cmdHash, UnityEngine.Networking.NetworkReader reader) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.OnCommandMessage (UnityEngine.Networking.NetworkMessage netMsg) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleReader (UnityEngine.Networking.NetworkReader reader, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleBytes (System.Byte[] buffer, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.TransportRecieve (System.Byte[] bytes, Int32 numBytes, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer+ServerSimpleWrapper.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.HandleData (Int32 connectionId, Int32 channelId, Int32 receivedSize, Byte error) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.InternalUpdate () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:CallCmdCreateMuzzleFlash()
+MuzzleFlash:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CallCmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:CallCmdCreateMuzzleFlash()
+MuzzleFlash:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CallCmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:CallCmdCreateMuzzleFlash()
+MuzzleFlash:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CallCmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+MuzzleFlash:CmdCreateMuzzleFlash()
+MuzzleFlash:CallCmdCreateMuzzleFlash()
+MuzzleFlash:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.CallCmdCreateMuzzleFlash () [0x00000] in <filename unknown>:0 
+  at MuzzleFlash.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at Detonator.DefaultFireballAMaterial () [0x00000] in <filename unknown>:0 
+  at Detonator.FillDefaultMaterials () [0x00000] in <filename unknown>:0 
+  at Detonator.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+BulletBomb:CmdCreate()
+BulletBomb:CallCmdCreate()
+BulletBomb:OnCollisionEnter()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Detonator.Explode () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.CallCmdCreate () [0x00000] in <filename unknown>:0 
+  at BulletBomb.OnCollisionEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Failed to spawn server object, assetId=506e1344570824173becabfe5979ede8 netId=5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=bd5e641f4623841a08f192106565131d netId=6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Did not find target for sync message for 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=1d03d54d0aaf14b94a69eea33039dea1 netId=7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=8e82f288a0a3c4f62813a704793d0359 netId=8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=506e1344570824173becabfe5979ede8 netId=9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=bd5e641f4623841a08f192106565131d netId=10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Did not find target for sync message for 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=1d03d54d0aaf14b94a69eea33039dea1 netId=11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to spawn server object, assetId=8e82f288a0a3c4f62813a704793d0359 netId=12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Did not find target for sync message for 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
